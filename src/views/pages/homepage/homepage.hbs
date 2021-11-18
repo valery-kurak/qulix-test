@@ -1,0 +1,186 @@
+{{#extend "_site-layout" title="Qulix Test"}}
+    {{#content "main-content"}}
+        <div class="main__filters">
+
+            <div class="main__filters-blocks  container">
+                <div class="main__filters--checkboxes">
+                    <label class="main__filters--checkbox">Today
+                        <input type="checkbox">
+                    </label>
+                    <label class="main__filters--checkbox">Tomorrow
+                        <input type="checkbox">
+                    </label>
+                    <label class="main__filters--checkbox">Week
+                        <input type="checkbox">
+                    </label>
+                    <label class="main__filters--checkbox">Month
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="main__filters--options">
+
+                    <div class="main__filters--options-select--block">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span>All Plans</span>
+                            </div>
+                            <input type="hidden" name="plan">
+                            <ul class="dropdown-menu">
+                                <li id="family">Family</li>
+                                <li id="work">Work</li>
+                                <li id="study">Study</li>
+                                <li id="wish">Wish</li>
+                            </ul>
+                            <div class="main__filters--options-select-img"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="main__filters--radios">
+                        <div class="main__filters--radio">
+                            <input class="main__filters--radio-input" type="radio" id="major" name="option" value="major">
+                            <label class="main__filters--radio-label-major  main__filters--radio-label" for="major">Major</label>
+                        </div>
+                        <div class="main__filters--radio">
+                            <input class="main__filters--radio-input" type="radio" id="minor" name="option" value="minor">
+                            <label class="main__filters--radio-label" for="minor">Minor</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main__filters--search">
+                    <img id="searchImg" src="../../../images/search.svg" alt="search">
+                    <input class="main__filters--search-input" type="search" placeholder="Search for plans">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main__events">
+
+            <div class="main__events-block  container">
+
+                <div class="main__event-reminder  main__event-first">
+                    <a href="#" class="main__event--adding">
+                        <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="main__event--adding-svg" d="M0.431274 18H36.5687" stroke="#FDFDFD" stroke-width="2"/>
+                            <path class="main__event--adding-svg" d="M18.5 0L18.5 36" stroke="#FDFDFD" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="main__event  main__event-second">
+
+                    <picture>
+                        <source media="(max-width:991.98px)" srcset="content/images/website/vacationlarge.jpg">
+                        <source media="(max-width:575.98px)" srcset="content/images/website/vacationsmall.jpg">
+                        <img class="main__event--img" src="../../../images/vacation.jpg" alt="vacation">
+                    </picture>
+
+                    <div class="main__event--info">
+                        <h3 class="main__event--name">Vacation</h3>
+                        <div class="main__event--date">
+                            <p>10/05/2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__event  main__event-third">
+
+                    <picture>
+                        <source media="(max-width:991.98px)" srcset="content/images/website/cinemalarge.jpg">
+                        <source media="(max-width:575.98px)" srcset="content/images/website/cinemasmall.jpg">
+                        <img class="main__event--img" src="../../../images/cinema.jpg" alt="cinema">
+                    </picture>
+
+                    <div class="main__event--info">
+                        <h3 class="main__event--name">Cinema</h3>
+                        <div class="main__event--date">
+                            <p>11/05/2019</p>
+                            <span>7PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__event-reminder  main__event-fourth">
+                    <div class="main__event-reminder--content">
+                        <div class="main__event--info">
+                            <h2 class="main__event--time  main__event--name">7PM - 8PM</h2>
+                            <div class="main__event--info-details">
+                                <h3 class="main__event--name">Doctor</h3>
+                                <div class="main__event--date">
+                                    <p>11/05/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__event-reminder  main__event-fifth">
+                    <div class="main__event-reminder--major  main__event-reminder--content">
+                        <div class="main__event--info">
+                            <h2 class="main__event--time  main__event--name">9AM - 10AM</h2>
+                            <div class="main__event--info-details">
+                                <h3 class="main__event--name">Meeting</h3>
+                                <div class="main__event--date">
+                                    <p>10/05/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__event  main__event-sixth">
+
+                    <picture>
+                        <source media="(max-width:991.98px)" srcset="content/images/website/dinnerlarge.jpg">
+                        <source media="(max-width:575.98px)" srcset="content/images/website/dinnersmall.jpg">
+                        <img class="main__event--img" src="../../../images/dinner.jpg" alt="dinner">
+                    </picture>
+
+                    <div class="main__event--info">
+                        <h3 class="main__event--name">Family dinner</h3>
+                        <div class="main__event--date">
+                            <p>11/12/2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__event  main__event-seventh">
+
+                    <picture>
+                        <source media="(max-width:991.98px)" srcset="content/images/website/coffeelarge.jpg">
+                        <source media="(max-width:575.98px)" srcset="content/images/website/coffeesmall.jpg">
+                        <img class="main__event--img" src="../../../images/coffee.jpg" alt="coffee">
+                    </picture>
+
+                    <div class="main__event--info">
+                        <h3 class="main__event--name">Coffee with Susan</h3>
+                        <div class="main__event--date">
+                            <p>10/05/2019</p>
+                        </div>
+                        <a class="main__event--link" href="#">http://therainforestcafe.co.uk/</a>
+                    </div>
+                </div>
+
+                <div class="main__event-reminder  main__event-eighth">
+                    <div class="main__event-reminder--content">
+                        <div class="main__event--info">
+                            <h2 class="main__event--time  main__event--name">4PM - 5PM</h2>
+                            <div class="main__event--info-details">
+                                <h3 class="main__event--name">Massage</h3>
+                                <div class="main__event--date">
+                                    <p>11/08/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    {{/content}}
+{{/extend}}

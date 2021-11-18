@@ -1,0 +1,122 @@
+.footer {
+    background: $blue;
+
+    color: $white;
+
+    &__mob {
+        display: none;
+        @media (max-width: $mdsmall) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background: #484B98;
+        }
+    }
+
+    &__activity {
+        display: flex;
+        align-items: center;
+        grid-gap: 2px;
+
+        color: #FFFFFF;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+        padding: 12px;
+
+        background: $blue;
+
+        transition: .3s all;
+
+        &--svg {
+            transition: .3s all;
+        }
+
+        &:hover {
+            color: $pink;
+        }
+        &:hover &--svg {
+            fill: $pink;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $mdsmall) {
+            display: none;
+        }
+    }
+
+    &__links {
+        display: flex;
+        grid-gap: 59px;
+
+        @media (max-width: $mdmedium) {
+            grid-gap: 30px;
+        }
+    }
+
+    &__link {
+        color: $white;
+
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+
+        text-decoration: none;
+
+        transition: .3s all;
+
+        &-active {
+            border-bottom: 2px solid $purple;
+
+            line-height: 22px;
+        }
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+    &__social {
+        display: flex;
+        grid-gap: 46px;
+
+        padding: 33px 0;
+
+        @media (max-width: $mdmedium) {
+            grid-gap: 20px;
+        }
+
+        &--link {
+            transition: fill .3s ease;
+
+            &:hover &-svg {
+                fill: $pink;
+            }
+
+            &-svg {
+                transition: fill .3s ease;
+            }
+        }
+    }
+
+}
+
+.plans {
+    background: #434791;
+}
+.share {
+    background: rgba(253, 241, 255, .2);
+}
